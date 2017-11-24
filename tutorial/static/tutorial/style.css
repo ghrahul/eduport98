@@ -1,0 +1,12 @@
+/*here we can put code to design our homepage and all*/
+body{
+    background: white url("images/imagename.filetype");
+
+}
+.navbar{
+  border-radius: 0;
+  }
+
+.navbar-brand{
+  font-family: 'Satisfy',cursive;
+}

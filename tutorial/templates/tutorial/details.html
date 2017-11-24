@@ -1,0 +1,12 @@
+{% extends 'tutorial/base.html' %}
+{% block title %}Notes{% endblock %}
+{% block body %}
+    <h1>{{subject.subject_area}}</h1>
+    <h2>{{subject.subject_name}}</h2>
+    <h3>{{subject.tutor}}</h3>
+    <ul>
+        {% for note in subject.note_set.all %}
+        <li><a href="{{ note.note_drive }}" target="_blank">{{ note.note_title }}</a></li>
+        {% endfor %}
+    </ul>
+{% endblock %}

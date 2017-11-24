@@ -1,0 +1,12 @@
+{% extends 'tutorial/base.html' %}
+
+{% block body%}
+   
+        <ul>
+            {%for subject in all_subject  %}
+            
+            <li><a href = "{% url 'tutorial:detail' subject.id %}">{{subject.subject_name}}</a></li>
+            {%endfor%}
+        </ul>
+    
+{% endblock %}
