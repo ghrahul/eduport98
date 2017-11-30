@@ -1,12 +1,35 @@
 {% extends 'tutorial/base.html' %}
 
+
+
 {% block body%}
-   
-        <ul>
-            {%for subject in all_subject  %}
-            
-            <li><a href = "{% url 'tutorial:detail' subject.id %}">{{subject.subject_name}}</a></li>
-            {%endfor%}
-        </ul>
-    
+{% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="{% static 'tutorial/styleindex.css ' %}"/>
+
+
+        
+          <body>
+                
+            <div class="container">
+              <div class="row">
+                    {%for subject in all_subject  %}
+                <div class="col-sm-4 sp">
+                  <div class="card" style="width: 20rem;">
+                  <div class="card-body">
+                        <h4 class="card-title">{{subject.subject_name}}</h4>
+                        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                    <a href="{% url 'tutorial:detail' subject.id %}" class="btn btn-primary">See Notes</a>
+                </div>
+              </div>
+              </div>
+              {%endfor%}
+            </div>
+            </div>
+     
+          </body>
+        
+
+
+
 {% endblock %}

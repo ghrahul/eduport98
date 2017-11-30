@@ -1,0 +1,20 @@
+body{
+    background: url("images/background1.png");
+
+}
+.sp
+{
+    padding-top: 50px;
+}
+
+.card
+{
+    text-align: center;
+   
+   
+}
+.card-body{
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+}

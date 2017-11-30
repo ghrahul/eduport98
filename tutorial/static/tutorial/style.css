@@ -1,6 +1,6 @@
 /*here we can put code to design our homepage and all*/
 body{
-    background: white url("images/imagename.filetype");
+    background: white url("images/background1.png");
 
 }
 .navbar{
@@ -10,3 +10,4 @@ body{
 .navbar-brand{
   font-family: 'Satisfy',cursive;
 }
+
