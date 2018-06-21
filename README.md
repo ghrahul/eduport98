@@ -1,4 +1,9 @@
-# eduport
+### Eduport
+
+  This is an online educational portal.This portal enables teachers to share their notes subjectwise and student can learn from those materials.This project is done for the project based learning in Object Oriented Programming subject.
+  
+  The prototype is ready.Here are some snaps of that.
+
 
 
 
